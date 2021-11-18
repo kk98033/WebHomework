@@ -96,10 +96,10 @@ html, body{
 }
 /* #endregion */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .section{
         /* width: 100%; */
-        font-size: 4vw; /* The width is 100%, when the viewport is 800px or smaller */
+        font-size: 4.5vw; /* The width is 100%, when the viewport is 800px or smaller */
     }
 
     .avatar{
@@ -108,6 +108,16 @@ html, body{
 
     .downBtn{
         padding: 1vw;
-        font-size: 10vw;
+        font-size: 15vw;
+    }
+
+    .parallax{
+        height: 30vw;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .avatar{
+        width: 100%;
     }
   }
