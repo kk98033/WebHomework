@@ -133,10 +133,9 @@ html, body{
         margin-right: auto;
     }
 
-    /* .circleImage{
+    .circleImage{
         width: 60%;
-        float: none;
-    } */
+    }
 
     .imageContainer{
         width: 100%;
