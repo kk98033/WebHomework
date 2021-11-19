@@ -7,6 +7,10 @@ html, body{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 
 /* #region Top Bar */
 #topBar{
@@ -14,6 +18,7 @@ html, body{
     position: fixed;
     width: 100%;
     opacity: 100%;
+    z-index: 9999;
     /* display: none; */
 }
 
@@ -110,6 +115,27 @@ html, body{
 .imageContainer{
     width: 30%;
     display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.backgroundText{
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.6);
+    top: 42.5%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+
+    position: absolute;
+    text-align: center;
+    display: none;
+}
+
+.imageContainer:hover .backgroundText{
+    display: block;
 }
 
 .photoDescription{
@@ -147,7 +173,30 @@ html, body{
 
 /* #endregion */
 
-@media screen and (max-width: 600px) {
+
+/* #region Show case */
+.showCaseContainer{
+    margin-bottom: 30vw;
+}
+
+.showCaseImg{
+    float: left;
+    border-radius: 50%;
+    width: 20%;
+    height: 20%;
+}
+
+.showCaseText{
+    float: right;
+    width: 50%;
+    font-size: 2vw;
+    /* display: inline-block; */
+}
+/* #endregion */
+
+
+@media screen and (max-width: 600px){
+    /* #region First page */
     .section{
         /* width: 100%; */
         font-size: 4.5vw; /* The width is 100%, when the viewport is 800px or smaller */
@@ -167,9 +216,10 @@ html, body{
     .parallax{
         height: 30vw;
     }
+    /* #endregion */
 
 
-    /* Abount me section */
+    /* #region Abount me section */
     .circleImage{
         width: 80%;
     }
@@ -183,8 +233,14 @@ html, body{
         font-size: 3vw;
     }
 
+    .backgroundText{
+        width: 53%;
+        height: 75%;
+    }
+    /* #endregion */
 
-    /* Bottom section */
+
+    /* #region Bottom section */
     .bottom{
         height: 10%;
     }
@@ -193,10 +249,32 @@ html, body{
         font-size: 1vw;
         padding-top: 0px;
     }
+    /* #endregion */
+
+
+    /* #region Showcase section */
+    .showCaseText{
+        float: none;
+        width: 100%;
+        font-size: 3vw;
+    }
+    
+    .showCaseImg{
+        float: none;
+        border-radius: 50%;
+        width: 40%;
+        height: 40%;
+    }
+
+    .showCaseContainer{
+        margin-bottom: 10vw;
+    }
+    /* #endregion */
+
     
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 400px){
     .avatar{
         width: 100%;
     }
@@ -213,12 +291,30 @@ html, body{
     }
     
     .aboutMe{
-        font-size: 0.5vw;
+        font-size: 4vw;
     }
 
 
     /* Bottom section */
     .bottomText{
-        font-size: 1px;
+        font-size: 1vw;
     }
+
+
+    /* #region Showcase section */
+    .showCaseText{
+        font-size: 3.5vw;
+    }
+    
+    .showCaseImg{
+        width: 60%;
+        height: 60%;
+    }
+
+    .showCaseContainer{
+        margin-bottom: 10vw;
+    }
+    /* #endregion */
+
 }
+
