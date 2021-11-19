@@ -8,10 +8,9 @@ html, body{
 }
 
 
-/* Top Bar */
-/* #region */
+/* #region Top Bar */
 #topBar{
-    background-color: rgb(50, 57, 58);
+    background-color: rgb(58, 55, 58);
     position: fixed;
     width: 100%;
     opacity: 100%;
@@ -33,8 +32,7 @@ html, body{
 /* #endregion */
 
 
-/* Center img */
-/* #region */
+/* #region Center img */
 .container{
     /* max-width: 960px; */
     width: 100%;
@@ -52,8 +50,8 @@ html, body{
 }
 /* #endregion */
 
-/* First page */
-/* #region */
+
+/* #region First page */
 .introduction{
     text-align: left;
 }
@@ -101,18 +99,15 @@ html, body{
 /* #endregion */
 
 
+/* #region About me section */
 .circleImage{
     border-radius: 50%;
     width: 80%;
     height: 80%; 
     margin: 10px;
-    /* float: left; */
-    /* max-width: 40%;
-    max-height: 40%; */
 }
 
 .imageContainer{
-    /* float: left; */
     width: 30%;
     display: inline-block;
 }
@@ -120,6 +115,37 @@ html, body{
 .photoDescription{
     text-align: center;
 }
+
+.aboutMe{
+    font-size: 3vw;
+}
+/* #endregion */
+
+
+/* #region Bottom section */
+.bottom{
+    height: 20%;
+    text-align: center;
+    background-color: rgb(16, 14, 20);
+}
+
+.bottomText{
+    font-size: 1.5vw;
+    padding-top: 60px;
+    
+    color: rgb(184, 174, 174);
+}
+
+#bottomTextHref a{
+    text-decoration:none;
+}
+
+#bottomTextHref a:hover{
+    color: gray;
+}
+
+
+/* #endregion */
 
 @media screen and (max-width: 600px) {
     .section{
@@ -133,15 +159,6 @@ html, body{
         margin-right: auto;
     }
 
-    .circleImage{
-        width: 60%;
-    }
-
-    .imageContainer{
-        width: 100%;
-        display: contents;
-    }
-
     .downBtn{
         padding: 1vw;
         font-size: 15vw;
@@ -150,10 +167,58 @@ html, body{
     .parallax{
         height: 30vw;
     }
-  }
+
+
+    /* Abount me section */
+    .circleImage{
+        width: 80%;
+    }
+
+    .imageContainer{
+        width: 40%;
+        display: inline-block;
+    }
+
+    .aboutMe{
+        font-size: 3vw;
+    }
+
+
+    /* Bottom section */
+    .bottom{
+        height: 10%;
+    }
+
+    .bottomText{
+        font-size: 1vw;
+        padding-top: 0px;
+    }
+    
+}
 
 @media screen and (max-width: 400px) {
     .avatar{
         width: 100%;
     }
-  }
+   
+    /* Abount me section */
+    .circleImage{
+        width: 50%;
+    }
+    
+    .imageContainer{
+        padding-top: 0;
+        width: 100%;
+        display: block;
+    }
+    
+    .aboutMe{
+        font-size: 0.5vw;
+    }
+
+
+    /* Bottom section */
+    .bottomText{
+        font-size: 1px;
+    }
+}
