@@ -212,7 +212,7 @@ a{
     float: right;
     white-space: pre-line;
     width: 50%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding-bottom: 5vw;
 }
 /* #endregion */
@@ -242,6 +242,11 @@ a{
 .contactText{
     text-align: center;
     width: 100%;
+}
+
+.logo:hover .contactImg{
+    width: 110%;
+    height: 110%;
 }
 /* #endregion */
 
@@ -346,7 +351,7 @@ a{
     .showCaseText{
         float: none;
         width: 100%;
-        font-size: 1.5vw;
+        font-size: 2vw;
         margin-bottom: 10vw;
     }
     
