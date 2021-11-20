@@ -404,6 +404,7 @@ a{
     
     
     /* #region Abount me section */
+
     .circleImage{
         width: 50%;
     }
@@ -459,10 +460,10 @@ a{
     }
     /* #endregion */
 
-
     /* #region Others */
     .otherSection{
         padding: 10px;
     }
     /* #endregion */
 }
+
