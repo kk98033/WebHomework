@@ -342,8 +342,8 @@ a{
     }
 
     .backgroundText{
-        width: 53%;
-        height: 75%;
+        width: 80%;
+        height: 74%;
     }
     /* #endregion */
 
@@ -354,7 +354,7 @@ a{
     }
 
     .bottomText{
-        font-size: 1vw;
+        font-size: 2.3vw;
         padding-top: 0px;
     }
     /* #endregion */
@@ -368,7 +368,7 @@ a{
     .showCaseText{
         float: none;
         width: 100%;
-        font-size: 2vw;
+        font-size: 2.5vw;
         margin-bottom: 10vw;
     }
     
@@ -439,7 +439,12 @@ a{
     }
     
     .aboutMe{
-        font-size: 1.5vw;
+        font-size: 2vw;
+    }
+
+    .backgroundText{
+        width: 53%;
+        height: 75%;
     }
     /* #endregion */
 
