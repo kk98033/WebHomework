@@ -13,11 +13,6 @@ a{
     color: white;
 }
 
-/* @font-face { */
-    /* font-family: ; */
-    /* src: url(微軟正黑體-1.ttf);
-} */
-
 /* #region Top Bar */
 #topBar{
     background-color: rgb(58, 55, 58);
@@ -167,7 +162,7 @@ a{
 
 .bottomText{
     font-size: 1.5vw;
-    padding-top: 60px;
+    padding-top: 30px;
     
     color: rgb(184, 174, 174);
 }
