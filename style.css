@@ -277,6 +277,28 @@ a{
 }
 /* #endregion */
 
+
+/* #region Rick Roll */
+.rickrollBackround{
+    background-color: rgb(21, 19, 27);
+
+    color: white;
+    text-align: center;
+}
+
+.rickrollContainer{
+    width: 70%;
+    height: 70%;
+}
+
+.rickrollImg{
+    width: 25%;
+    height: 25%;
+    padding: 30px;
+}
+/* #endregion */
+
+
 @media screen and (max-width: 600px){
     /* #region Top bar */
     /* #endregion */
@@ -404,7 +426,6 @@ a{
     .avatar{
         width: 100%;
     }
-    
     
     /* #region Abount me section */
     .circleImage{
