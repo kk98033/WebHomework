@@ -76,7 +76,7 @@ a{
 .section{
     background-color: rgb(21, 19, 27);
     /* width: 100%; */
-    height: 100%;
+    /* height: 100%; */
     padding: 50px;
 
     font-size: 2.5vw;
@@ -251,7 +251,7 @@ a{
     text-align: center;
     color: white;
     padding: 50px;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .otherImg{
@@ -298,6 +298,30 @@ a{
 }
 /* #endregion */
 
+/* For iPad pro (I have completely no idea why im doing this, I don't even have an iPad pro) */
+@media screen and (min-width: 1024px) and (min-height: 1366px){
+    .showCaseText{
+        font-size: 2vw;
+    }
+
+    .showCaseImg{
+        width: 25%;
+        height: 25%;
+    }
+
+    .showSection{
+        height: 50%;
+    }
+
+    .bottom{
+        height: 15%;
+    }
+
+    .bottomText{
+        font-size: 2.5vw;
+        /* padding-top: 10pxx; */
+    }
+}
 
 @media screen and (max-width: 600px){
     /* #region Top bar */
@@ -362,6 +386,7 @@ a{
 
     /* #region Showcase section */
     .showSection{
+        height: 100%;
         padding: 35px;
     }
 
